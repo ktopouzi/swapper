@@ -5,6 +5,8 @@ A simple swapi consumer with filtering and sorting capabilities.
 For this small app I created a couple of components to help me fetch and display data from the swapi.dev api.
 
 ![image](https://user-images.githubusercontent.com/15310054/97092537-a3fc4580-163c-11eb-86eb-0eac8dd27f05.png)
+![image](https://user-images.githubusercontent.com/15310054/97092603-284ec880-163d-11eb-8c34-12dac23770ed.png)
+
 
 ### Home
 
