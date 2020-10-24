@@ -42,15 +42,13 @@
                     class="text-lg leading-6 font-medium text-gray-900"
                     id="modal-headline"
                   >
-                    Deactivate account
+                    Default header
                   </h3>
                 </slot>
                 <slot name="content">
                   <div class="mt-2">
                     <p class="text-sm leading-5 text-gray-500">
-                      Are you sure you want to deactivate your account? All of
-                      your data will be permanently removed. This action cannot
-                      be undone.
+                      Default Content
                     </p>
                   </div>
                 </slot>
