@@ -4,6 +4,8 @@ A simple swapi consumer with filtering and sorting capabilities.
 
 For this small app I created a couple of components to help me fetch and display data from the swapi.dev api.
 
+![image](https://user-images.githubusercontent.com/15310054/97092537-a3fc4580-163c-11eb-86eb-0eac8dd27f05.png)
+
 ### Home
 
 This component is a route component view where the main action lives. It uses the `Pagination` and `Table` component to display data from the api. On the `created` life cycle hook data are being fetched from the API and stored in the store.
