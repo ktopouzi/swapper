@@ -82,8 +82,9 @@ export default {
   },
   mounted() {},
   computed: {
-    ...mapGetters("search", ["getPlanetArray", "getPeopleArray"]),
+    ...mapGetters("search", ["getPlanetArray"]),
     sortedColumns() {
+      // the sorting could be improved.
       // eslint-disable-next-line vue/no-side-effects-in-computed-properties
       return this.peopleData.sort((a, b) => {
         let modifier = 1;
@@ -111,13 +112,12 @@ export default {
 
       return new Date(date).toLocaleString("en-GB", options);
     },
-    sort(s) {
-      //if s == current sort, reverse
-      if (s === this.currentSort) {
+    sort(sort) {
+      if (sort === this.currentSort) {
         this.currentSortDirection =
           this.currentSortDirection === "asc" ? "desc" : "asc";
       }
-      this.currentSort = s;
+      this.currentSort = sort;
     },
     showModal(row) {
       this.planet = this.getPlanetArray.find(pl => pl.url === row.homeworld);
